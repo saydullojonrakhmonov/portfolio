@@ -1,14 +1,10 @@
 import React from 'react'
-import Header from './components/header/Header'
-import Info from './components/info/Info'
-import MyProjects from './components/works/Works'
+import Body from './pages/Body'
 
 function App() {
   return (
     <div>
-      <Header/>
-      <Info/>
-      <MyProjects/>
+      <Body />
     </div>
   )
 }

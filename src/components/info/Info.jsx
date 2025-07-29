@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 function Info() {
   return (
-    <section className="mt-40 px-6 lg:px-20">
+    <section className="mt-52 px-6 lg:px-20 h-[545px]">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
         {/* Text Section */}
         <div className="flex flex-col gap-6 max-w-3xl">
