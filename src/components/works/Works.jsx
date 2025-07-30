@@ -35,7 +35,7 @@ function MyProjects() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section className="py-24 px-6 lg:px-20 bg-gray-50 dark:bg-gray-900" id="projects">
+    <section  className="py-24 px-6 lg:px-20 bg-gray-50 dark:bg-gray-900" id="projects">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">My Projects</h2>
         <p className="text-gray-600 dark:text-gray-300">A collection of projects I've built using modern web technologies.</p>
