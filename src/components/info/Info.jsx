@@ -5,13 +5,17 @@ import { Typewriter } from 'react-simple-typewriter';
 
 function Info() {
   return (
-    <section className="mt-52 px-6 lg:px-20 h-[545px]">
+    <section className="mt-32 px-6 lg:px-20">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+        
         {/* Text Section */}
-        <div className="flex flex-col gap-6 max-w-3xl">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 dark:text-gray-900">
+        <div className="flex flex-col gap-6 max-w-3xl text-center lg:text-left">
+          <h1 className="text-2xl sm:text-2xl lg:text-5xl font-bold text-gray-800 dark:text-gray-900 leading-tight m-0 p-0">
             <Typewriter
-              words={['Hi, I am Saydullojon Rahmonov', 'I am a Frontend Developer']}
+              words={[
+                "Hi, I'm Saydullojon Rahmonov",
+                "I'm a Frontend Developer"
+              ]}
               loop={Infinity}
               cursor
               cursorStyle="|"
@@ -20,12 +24,15 @@ function Info() {
               delaySpeed={1000}
             />
           </h1>
-          <p className="text-gray-600 dark:text-gray-800 text-lg leading-relaxed">
-            I'm a passionate Frontend Developer with experience in building responsive, user-friendly web interfaces using React, Tailwind CSS, and modern JavaScript frameworks. I love turning complex ideas into clean, interactive designs. Always learning. Always building.
+
+          <p className="text-gray-600 dark:text-gray-800 text-base sm:text-lg leading-relaxed">
+            I'm a passionate Frontend Developer with experience in building responsive, 
+            user-friendly web interfaces using React, Tailwind CSS, and modern JavaScript frameworks. 
+            I love turning complex ideas into clean, interactive designs. Always learning. Always building.
           </p>
 
           {/* Download Resume Button */}
-          <div className="relative group w-fit">
+          <div className="relative group w-fit mx-auto lg:mx-0 mb-10">
             <a
               href="/saydullojon_rahmonov.pdf"
               download
@@ -33,15 +40,19 @@ function Info() {
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl shadow-md hover:bg-blue-700 transition cursor-pointer"
             >
               Download Resume
-              <FontAwesomeIcon icon={faDownload} className='ms-1' />
+              <FontAwesomeIcon icon={faDownload} className="ms-1" />
             </a>
           </div>
-
         </div>
 
         {/* Image Section */}
-        <div>
-          <img src="/logo.svg" alt="Developer" width="470" className="object-contain" />
+        <div className="flex justify-center">
+          <img
+            src="/logo.svg"
+            alt="Developer"
+            width="300"
+            className="object-contain sm:w-[400px] lg:w-[470px]"
+          />
         </div>
       </div>
     </section>
