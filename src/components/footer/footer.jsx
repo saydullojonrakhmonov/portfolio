@@ -30,7 +30,7 @@ const Footer = () => {
 
         {/* Social Media */}
         <div>
-          <h2 className="text-xl font-bold mb-4 text-white">Social</h2>
+          <h2 className="text-xl font-bold mb-4 text-white">Links</h2>
           <div className="flex gap-6 text-2xl">
             <a href="https://t.me/you_can_contact" target="_blank" rel="noopener noreferrer" title="Telegram">
               <FaTelegramPlane className="text-[#0088cc] hover:scale-110 transition-transform duration-200" />
