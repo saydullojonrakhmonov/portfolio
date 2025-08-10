@@ -5,12 +5,12 @@ import { Typewriter } from 'react-simple-typewriter';
 
 function Info() {
   return (
-    <section className="mt-32 px-6 lg:px-20">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+    <section className="px-6 lg:px-20 lg:h-[750px] md:mx-10 flex items-center">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full space-y-8 lg:space-y-0 lg:gap-12">
         
         {/* Text Section */}
-        <div className="flex flex-col gap-6 max-w-3xl text-center lg:text-left">
-          <h1 className="text-2xl sm:text-2xl lg:text-5xl font-bold text-gray-800 dark:text-gray-900 leading-tight m-0 p-0">
+        <div className="flex flex-col gap-6 max-w-3xl text-center sm:mt-10 lg:text-left">
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-gray-800 dark:text-gray-900 leading-tight">
             <Typewriter
               words={[
                 "Hi, I'm Saydullojon Rahmonov",
@@ -32,7 +32,7 @@ function Info() {
           </p>
 
           {/* Download Resume Button */}
-          <div className="relative group w-fit mx-auto lg:mx-0 mb-10">
+          <div className="relative group w-fit mx-auto lg:mx-0">
             <a
               href="/saydullojon_rahmonov.pdf"
               download
@@ -46,12 +46,11 @@ function Info() {
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-5 ">
           <img
             src="/logo.svg"
             alt="Developer"
-            width="300"
-            className="object-contain sm:w-[400px] lg:w-[470px]"
+            className="w-60 sm:w-80 lg:w-[470px] object-contain"
           />
         </div>
       </div>
