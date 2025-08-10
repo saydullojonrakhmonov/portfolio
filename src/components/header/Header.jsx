@@ -6,7 +6,7 @@ function Header() {
             <img src={'/logo.svg'} alt="" className='cursor-pointer' />
             <ul className='flex gap-4' >
                 <li className='cursor-pointer'><a href="#projects">Works</a></li>
-                <li className='cursor-pointer'><a href="">Blog</a></li>
+                <li className='cursor-pointer'><a href="https://www.linkedin.com/in/saydullojon-rahmonov/" target='_blank'>Blog</a></li>
                 <li className='cursor-pointer'><a href="#contact">Contact</a></li>
             </ul>
         </div>
