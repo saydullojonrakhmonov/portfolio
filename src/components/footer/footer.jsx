@@ -1,10 +1,11 @@
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import {
   FaTelegramPlane,
   FaLinkedin,
   FaGithub,
-  FaEnvelope,
-  FaPhone,
+  FaEnvelope
 } from 'react-icons/fa';
 
 const Footer = () => {
@@ -21,7 +22,7 @@ const Footer = () => {
               <a href="mailto:saydullo779@gmail.com" className="hover:underline text-gray-300">saydullo779@gmail.com</a>
             </li>
             <li className="flex items-center gap-3">
-              <FaPhone className="text-green-400" />
+             <FontAwesomeIcon icon={faPhone} className="text-blue-400"/>
               <a href="tel:+998942203989" className="hover:underline text-gray-300">+998 94 220 39 89</a>
             </li>
           </ul>
