@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import {
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaCogs,
 } from 'react-icons/fa';
@@ -7,49 +6,44 @@ import {
 } from 'react-icons/si';
 
 const techStack = [
-  { name: 'HTML5', icon: <FaHtml5 className="text-orange-600 text-4xl" /> },
-  { name: 'CSS3', icon: <FaCss3Alt className="text-blue-600 text-4xl" /> },
-  { name: 'JavaScript', icon: <FaJs className="text-yellow-400 text-4xl" /> },
-  { name: 'React', icon: <FaReact className="text-cyan-500 text-4xl" /> },
-  { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-4xl" /> },
-  { name: 'Git', icon: <FaGitAlt className="text-red-500 text-4xl" /> },
-  { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-800 text-4xl" /> },
-  { name: 'MongoDB', icon: <SiMongodb className="text-green-500 text-4xl" /> },
-  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-teal-400 text-4xl" /> },
-  { name: 'MUI', icon: <SiMui className="text-blue-500 text-4xl" /> },
-  { name: 'Redux', icon: <SiRedux className="text-purple-500 text-4xl" /> },
-  { name: 'Zustand', icon: <FaCogs className="text-orange-400 text-4xl" /> },
-  { name: 'SQL', icon: <SiMysql className="text-blue-600 text-4xl" /> },
-  { name: 'Express.js', icon: <SiExpress className="text-gray-800 text-4xl" /> },
+  { name: 'HTML5', icon: <FaHtml5 className="text-orange-500" /> },
+  { name: 'CSS3', icon: <FaCss3Alt className="text-blue-500" /> },
+  { name: 'JavaScript', icon: <FaJs className="text-yellow-400" /> },
+  { name: 'React', icon: <FaReact className="text-sky-400" /> },
+  { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
+  { name: 'Git', icon: <FaGitAlt className="text-red-500" /> },
+  { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-800" /> },
+  { name: 'MongoDB', icon: <SiMongodb className="text-green-600" /> },
+  { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-teal-400" /> },
+  { name: 'MUI', icon: <SiMui className="text-blue-500" /> },
+  { name: 'Redux', icon: <SiRedux className="text-purple-500" /> },
+  { name: 'Zustand', icon: <FaCogs className="text-orange-400" /> },
+  { name: 'SQL', icon: <SiMysql className="text-blue-600" /> },
+  { name: 'Express.js', icon: <SiExpress className="text-gray-700 dark:text-white" /> },
 ];
 
-const TechStackScroll = () => {
-  const duplicatedStack = [...techStack, ...techStack];
-
+const TechStackCards = () => {
   return (
-    <section className="w-full overflow-hidden py-16 bg-white">
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-900">My Tech Stack</h2>
+    <section className="w-full py-20 px-4 bg-gradient-to-br from-white via-gray-100 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+        My Tech Stack
+      </h2>
 
-      <div className="relative w-full">
-        <motion.div
-          className="flex gap-10 w-max"
-          animate={{ x: ['0%', '-50%'] }}
-          transition={{
-            duration: 20,
-            ease: 'linear',
-            repeat: Infinity,
-          }}
-        >
-          {duplicatedStack.map((tech, index) => (
-            <div key={index} className="flex flex-col items-center min-w-[120px]">
-              {tech.icon}
-              <p className="mt-2 text-sm font-medium text-gray-800">{tech.name}</p>
-            </div>
-          ))}
-        </motion.div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+        {techStack.map((tech, index) => (
+          <div
+            key={index}
+            className="bg-white/30 dark:bg-white/10 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 flex flex-col items-center text-center"
+          >
+            <div className="text-5xl mb-3">{tech.icon}</div>
+            <p className="text-md font-semibold text-gray-800 dark:text-gray-100">
+              {tech.name}
+            </p>
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default TechStackScroll;
+export default TechStackCards;
