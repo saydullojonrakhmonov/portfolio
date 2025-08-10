@@ -24,8 +24,8 @@ const techStack = [
 
 const TechStackCards = () => {
   return (
-    <section className="w-full py-20 px-4 bg-gradient-to-br from-white via-gray-100 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+    <section className="w-full py-20 px-4 bg-white dark:bg-white">
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
         My Tech Stack
       </h2>
 
@@ -33,7 +33,7 @@ const TechStackCards = () => {
         {techStack.map((tech, index) => (
           <div
             key={index}
-            className="bg-white/30 dark:bg-white/10 backdrop-blur-lg border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 flex flex-col items-center text-center"
+            className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-lg hover:shadow-xl hover:scale-[1.03] transition-transform duration-300 flex flex-col items-center text-center"
           >
             <div className="text-5xl mb-3">{tech.icon}</div>
             <p className="text-md font-semibold text-gray-800 dark:text-gray-100">
