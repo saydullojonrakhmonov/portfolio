@@ -5,21 +5,28 @@ import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 const projects = [
   {
     title: 'Portfolio Website',
-    description: 'Responsive portfolio built with React, Tailwind CSS, and framer-motion. Includes dark/light mode.',
+    description: 'Responsive portfolio built with React, Tailwind CSS, and framer-motion.',
     image: '/weddingHall.png',
     github: 'https://github.com/rahmonovsaydullo/weddingHall',
-    demo: 'https://yourportfolio.com',
+    demo: '#',
     tech: ['React', 'Tailwind', 'React Calendar', 'Node js', 'Express', 'PostgreSql'],
   },
   {
-    title: 'E-Commerce UI',
-    description: 'A full e-commerce front-end with shopping cart, filters, and responsive layout.',
-    image: '/projects/ecommerce.png',
+    title: 'Quiz app',
+    description: 'A quiz app with modern styles and created with using pure JavaScript, HTML and CSS. ',
+    image: '/quiz_image.png',
     github: 'https://github.com/yourusername/ecommerce-ui',
-    demo: 'https://ecommerce-demo.com',
-    tech: ['React', 'Redux', 'MUI'],
+    demo: 'https://saydullo-quiz.netlify.app/',
+    tech: ['JavaScript', 'Axios', 'HTML', 'CSS', 'Bootstrap'],
   },
-  // More projects...
+  {
+    title: 'Quiz app',
+    description: 'A quiz app with modern styles and created with using pure JavaScript, HTML and CSS. ',
+    image: '/weather_image.png',
+    github: 'https://github.com/yourusername/ecommerce-ui',
+    demo: 'https://saydullojon-weather-app.netlify.app/',
+    tech: ['JavaScript', 'Axios', 'HTML', 'CSS', 'Bootstrap'],
+  },
 ];
 
 const cardVariants = {
