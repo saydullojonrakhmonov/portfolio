@@ -42,13 +42,11 @@ function MyProjects() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <section  className="py-24 px-6 lg:px-20 bg-gray-50 dark:bg-gray-900" id="projects">
+    <section  className="py-24 px-6 lg:px-20 bg-gray-900" id="projects">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">My Projects</h2>
         <p className="text-gray-600 dark:text-gray-300">A collection of projects I've built using modern web technologies.</p>
       </div>
-
-      {/* Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, i) => (
           <motion.div
@@ -60,7 +58,6 @@ function MyProjects() {
             viewport={{ once: true }}
             variants={cardVariants}
           >
-            {/* Clickable Image */}
             <img
               src={project.image}
               alt={project.title}
@@ -102,8 +99,6 @@ function MyProjects() {
           </motion.div>
         ))}
       </div>
-
-      {/* Modal Image Preview */}
       <AnimatePresence>
         {selectedImage && (
           <motion.div
@@ -120,7 +115,7 @@ function MyProjects() {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              onClick={(e) => e.stopPropagation()} // prevent close when image clicked
+              onClick={(e) => e.stopPropagation()} 
             />
           </motion.div>
         )}
