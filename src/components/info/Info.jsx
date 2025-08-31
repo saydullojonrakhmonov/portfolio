@@ -34,7 +34,7 @@ function Info() {
           {/* Download Resume Button */}
           <div className="relative group w-fit mx-auto lg:mx-0">
             <a
-              href="/SaydullojonRahmonov.pdf"
+              href="/rakhmonov_saydulojon_resume.pdf"
               download
               title="Click to download resume"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl shadow-md hover:bg-blue-700 transition cursor-pointer"
